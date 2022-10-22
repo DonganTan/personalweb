@@ -1,0 +1,25 @@
+      <footer class="footer">
+        <ul class="footer-links">
+          <!-- remove rss
+          <li>
+            <a href="{{ .Site.RSSLink | relURL }}" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          -->
+          <h1> <strong> Welcome to my homepage! </strong> </h1>
+          <br>
+          <img src="{{"images/photo.jpg"|relURL}}" alt="photo" width="400" height="400">
+          <br>
+          <!-- remove hugo-logo
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="{{ "images/hugo-logo.png" | relURL }}" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+          -->
+        </ul>
+      </footer>
+
+    </div>
+    {{ partial "footer_highlightjs" . }}
+    {{ partial "footer_mathjax" . }}
+    {{ template "_internal/google_analytics.html" . }}
+  </body>
+</html>
